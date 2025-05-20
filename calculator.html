@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>极简差价计算器</title>
+    <style>
+        body { 
+            margin: 0; 
+            padding: 10px;
+            font-family: Arial;
+            background: #f0f0f0;
+        }
+        input { 
+            width: 70px; 
+            margin: 5px;
+            padding: 5px;
+            font-size: 16px;
+        }
+        #result { 
+            font-size: 16px; 
+            margin-top: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <input id="v1" type="number" placeholder="价格1" 
+           oninput="calculate()">
+    <input id="v2" type="number" placeholder="价格2" 
+           oninput="calculate()">
+    <div id="result">差价: 0</div>
+    
+    <script>
+        function calculate() {
+            const v1 = parseFloat(document.getElementById('v1').value) || 0;
+            const v2 = parseFloat(document.getElementById('v2').value) || 0;
+            document.getElementById('result').innerText = "差价: " + Math.abs(v1-v2);
+        }
+    </script>
+</body>
+</html>

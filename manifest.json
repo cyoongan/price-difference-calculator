@@ -1,0 +1,14 @@
+{
+  "name": "极简差价计算器",
+  "short_name": "差价计算",
+  "start_url": "calculator.html",
+  "display": "standalone",
+  "background_color": "#f0f0f0",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
